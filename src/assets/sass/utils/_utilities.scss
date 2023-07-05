@@ -48,9 +48,14 @@
         justify-content: center;
     }
 
-    &-gap {
-        gap: 36px;
-    }
+}
+
+.gap-lg {
+    gap: 36px;
+}
+
+.gap-sm {
+    gap: 20px;
 }
 
 .hide {
@@ -69,6 +74,10 @@
     padding: 70px 0;
 } 
 
+.pd-16 {
+    padding: 16px;
+}
+
 .accent-text {
     color: $accent-color;
 }
@@ -84,6 +93,12 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     @extend %overflow-hide;
+}
+
+.filled-box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @each $size, $margin in $margins{

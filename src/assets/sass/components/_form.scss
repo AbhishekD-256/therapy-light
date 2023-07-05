@@ -1,0 +1,22 @@
+%input-box {
+    border-radius: 6px;
+    border: solid 1px #979797;
+    background-color: transparent;
+    @extend %font-family;
+}
+
+.form {
+    input {
+        @extend %input-box;
+    }
+
+    textarea {
+        resize: none;
+        @extend %input-box;
+    }
+
+   &__submit {
+        align-self: flex-end;
+    }
+
+}

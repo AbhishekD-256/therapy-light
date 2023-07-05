@@ -5,5 +5,5 @@
     background: linear-gradient(to bottom, #00d2ef, #0093c4);
     border-radius: 6px;
     color: $secondary-color;
-    text-align: center;
+    @extend %font-family;
 }

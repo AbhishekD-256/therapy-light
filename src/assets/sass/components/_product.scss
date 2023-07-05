@@ -1,7 +1,7 @@
 .product{
-    gap: 20px;
+    gap: $spacing;
     width: 540px;
-    padding: 15px;
+    padding: 16px;
     border-radius: 7px;
     box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.1);
 
@@ -12,6 +12,6 @@
         background-color: #c1f9d0;
         border-radius: 4px;
         vertical-align: top;
-        margin-top: 10px    ;
+        margin-top: 10px;
     }
 }

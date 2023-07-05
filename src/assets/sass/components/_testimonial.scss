@@ -1,19 +1,17 @@
 .testimonial {
         align-items: center ;
         padding-bottom: 40px;
+        
     &__image {
         @include rounded-box(100px, 100px);
-        margin-bottom: 20px;
+        margin-bottom: $spacing;
     }
+
     &__descri {
         max-width: 800px;
         color: $dark-black;
         margin-bottom: 16px;
-    }
-
-    &-controls {
-        gap: 20px;
-    }
+    }    
 }
 
 .arrow {

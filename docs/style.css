@@ -25,13 +25,17 @@ ul, ol {
   list-style: none;
 }
 
-input, button {
+input, button, textarea {
   outline: none;
   border: none;
 }
 
 button {
   cursor: pointer;
+}
+
+body, .form textarea, .form input, .btn {
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-sm {
@@ -86,8 +90,13 @@ button {
 .fx-center {
   justify-content: center;
 }
-.fx-gap {
+
+.gap-lg {
   gap: 36px;
+}
+
+.gap-sm {
+  gap: 20px;
 }
 
 .hide {
@@ -106,6 +115,10 @@ button {
   padding: 70px 0;
 }
 
+.pd-16 {
+  padding: 16px;
+}
+
 .accent-text {
   color: #00b3ef;
 }
@@ -118,6 +131,12 @@ button {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.filled-box {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mb-lg {
@@ -139,7 +158,6 @@ button {
   background: linear-gradient(to bottom, #00d2ef, #0093c4);
   border-radius: 6px;
   color: #ffffff;
-  text-align: center;
 }
 
 .card {
@@ -159,7 +177,7 @@ button {
   height: 100%;
 }
 .card__content {
-  padding: 15px 15px 0;
+  padding: 16px 16px 0;
 }
 .card__more {
   align-self: flex-end;
@@ -180,9 +198,6 @@ button {
   max-width: 800px;
   color: #1d2027;
   margin-bottom: 16px;
-}
-.testimonial-controls {
-  gap: 20px;
 }
 
 .arrow {
@@ -243,7 +258,7 @@ button {
 .product {
   gap: 20px;
   width: 540px;
-  padding: 15px;
+  padding: 16px;
   border-radius: 7px;
   box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.1);
 }
@@ -255,6 +270,19 @@ button {
   border-radius: 4px;
   vertical-align: top;
   margin-top: 10px;
+}
+
+.form textarea, .form input {
+  border-radius: 6px;
+  border: solid 1px #979797;
+  background-color: transparent;
+}
+
+.form textarea {
+  resize: none;
+}
+.form__submit {
+  align-self: flex-end;
 }
 
 .header {
@@ -272,7 +300,6 @@ button {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   color: #000000;
   font-size: 18px;
   background: #ffffff;
@@ -290,11 +317,6 @@ body {
   position: absolute;
   top: 30%;
   left: auto;
-}
-.hero__bg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .hero__heading {
   font-size: 38px;
@@ -324,7 +346,7 @@ body {
   background-color: #ffffff;
 }
 
-.testimonials-section, .case-studies {
+.contact-us, .testimonials-section, .case-studies {
   background: #f5fdff;
 }
 
@@ -341,8 +363,19 @@ body {
   height: 320px;
   border-radius: 50%;
 }
-.leader__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.contact-us {
+  padding: 16px 16px 70px;
+}
+.contact-us__details {
+  padding: 54px 40px 0 16px;
+}
+.contact-us__banner {
+  flex-shrink: 0;
+  width: 650px;
+  height: 750px;
+  background-color: #ffffff;
+}
+.contact-us .contact-address {
+  margin-bottom: 56px;
 }

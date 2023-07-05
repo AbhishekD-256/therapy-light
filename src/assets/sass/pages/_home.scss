@@ -1,5 +1,6 @@
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    @extend %font-family;
     color: $primary-color;
     font-size: 18px;
     background: $secondary-color;
@@ -17,11 +18,6 @@ body {
         @include position-abs(30%, auto);
     }
 
-    &__bg {
-        @include size(100%, 100%);
-        object-fit: cover;
-    }
-
     &__heading {
         font-size: 38px;
     }
@@ -33,7 +29,7 @@ body {
 }
 
 %padded-box {
-    padding: 20px;
+    padding: $spacing;
     border-radius: 17px;
 }
 
@@ -76,11 +72,25 @@ body {
     &__image {
         display: block;
         @include  rounded-box(320px, 320px);
+    }
+}
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+
+.contact-us {
+    padding: 16px 16px 70px;
+    @extend %light-bg;
+
+    &__details {
+        padding: 54px 40px 0 16px;        
+    }
+
+    &__banner {
+        flex-shrink: 0;
+        @include size(650px, 750px);
+        background-color: $secondary-color;
+       
+    }
+    .contact-address {
+        margin-bottom: 56px;
     }
 }
