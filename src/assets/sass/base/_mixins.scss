@@ -1,0 +1,34 @@
+@mixin position-abs($top, $left){
+    position: absolute;
+    top:$top;
+    left: $left;
+}
+
+@mixin size($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin rounded-box($w, $h) {
+    width: $w;
+    height: $h;
+    border-radius: 50%;
+}
+
+@mixin break-point($bp) {
+    @if $bp == 'laptop' {
+        @media screen and (max-width:1024px) {
+            @content
+        }
+    }
+    @else if $bp == 'tablet' {
+        @media screen and (max-width:768px) {
+            @content
+        }
+    }
+    @else if $bp == 'mobile' {
+        @media screen and (max-width:320px) {
+            @content
+        }
+    }
+}

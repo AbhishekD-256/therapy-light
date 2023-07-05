@@ -1,0 +1,14 @@
+.color-box {
+    @include size(112px, 112px);
+    border-radius: 10px;
+    img {
+        @include size(52px, 62px);
+        object-fit: contain
+    }
+    @each $name, $color in $colors {
+        &--#{$name} {
+            background-color: $color;
+        }
+    }
+
+}

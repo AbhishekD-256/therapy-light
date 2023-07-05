@@ -1,0 +1,25 @@
+.card {
+    max-width: 345px;
+    padding: 0 0 30px;
+    box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
+    background-color: $secondary-color;
+
+    &__image {
+        display: inline-block;
+        line-height: 0;
+        @include size(100%, 245px);
+
+        img {
+         @include size(100%, 100%);
+        }
+    }
+
+    &__content {
+        padding: 15px 15px 0;
+    }
+
+    &__more {
+        align-self: flex-end;
+        color: $accent-color;   
+    }
+}

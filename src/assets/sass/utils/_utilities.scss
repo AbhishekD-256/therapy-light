@@ -1,0 +1,87 @@
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+
+    &--lg {
+        max-width: 1200px;
+    }
+
+    &--sm {
+        max-width: 962px;
+    }
+}
+
+%flex {
+    display: flex;
+}
+
+%align-center {
+    align-items: center
+}
+
+.fx {
+    @extend %flex;
+
+    &-col {
+        @extend %flex;
+        flex-direction: column;
+    }
+
+    &-sb {
+        @extend %flex;
+        @extend %align-center;
+        justify-content: space-between;
+    }
+
+    &-vc {
+        @extend %flex;
+        @extend %align-center;
+    }
+
+    &-wrap {
+        flex-wrap: wrap;
+    }
+
+    &-center {
+        @extend %flex;
+        @extend %align-center;
+        justify-content: center;
+    }
+
+    &-gap {
+        gap: 36px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pd-tb {
+    padding: 70px 0;
+} 
+
+.accent-text {
+    color: $accent-color;
+}
+
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@each $size, $margin in $margins{
+    .mb-#{$size} {
+        margin-bottom: $margin;
+    }
+}

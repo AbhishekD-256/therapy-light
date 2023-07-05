@@ -1,0 +1,14 @@
+.header {
+    @include position-abs(0,0);
+    z-index: 10;
+    padding: 28px 0;
+
+    &__nav {
+        .nav {        
+            gap: 30px;
+            a {
+                color: $secondary-color;
+            } 
+        }
+    }
+}

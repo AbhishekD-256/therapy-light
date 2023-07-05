@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.font {
+    @each $font, $size in $font-sizes {
+        &-#{$font} {
+            font-size: $size;
+        }
+    }
+}
+
+.fw {
+    &-b {
+        font-weight: bold;
+    }
+
+}
+
+.lh {
+    &-sm {
+        line-height: 1.6;
+    }
+    &-lg {
+        line-height: 2;
+    }
+}

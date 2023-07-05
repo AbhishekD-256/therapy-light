@@ -1,0 +1,45 @@
+.testimonial {
+        align-items: center ;
+        padding-bottom: 40px;
+    &__image {
+        @include rounded-box(100px, 100px);
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    &__descri {
+        max-width: 800px;
+        color: $dark-black;
+        margin-bottom: 16px;
+    }
+
+    &-controls {
+        gap: 20px;
+    }
+}
+
+.arrow {
+    @include rounded-box(50px, 50px);
+    box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
+    background: $secondary-color;
+    
+    img {
+        width: 30px;
+        object-fit: contain;
+    }
+}
+
+.paginations {
+    &__item {
+        display: inline-block;
+        @include rounded-box(8px, 8px,);
+        background-color: #bababa;
+
+        &.active {
+            background-color: $dark-black;
+        }
+
+        &+& {
+            margin-left: 10px;
+        }
+    }
+}

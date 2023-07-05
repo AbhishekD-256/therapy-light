@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $primary-color;
+    font-size: 18px;
+    background: $secondary-color;
+}
+
+.hero {
+    position: relative;
+    justify-content: center;
+    height:110vh;
+    max-height: 800px;
+    min-height: 500px;
+    color: $secondary-color;
+
+    .container {
+        @include position-abs(30%, auto);
+    }
+
+    &__bg {
+        @include size(100%, 100%);
+        object-fit: cover;
+    }
+
+    &__heading {
+        font-size: 38px;
+    }
+}
+
+.mission {
+    padding: 52px 0 64px;
+    background: $light-bg-color url('https://ik.imagekit.io/abhiimages/Therapy_Light/delighter.svg?updatedAt=1688389506981') top 50px center/930px 320px no-repeat;
+}
+
+%padded-box {
+    padding: 20px;
+    border-radius: 17px;
+}
+
+.values {
+    &__item {
+        max-width: 345px;
+        background-color: #f9f9f9;
+        @extend %padded-box;
+    }
+}
+
+.approach {
+    &-section {
+        background: #fff7fe url('./../images/delighter-2.svg') center/1090px 1039px no-repeat;
+    }
+    &__item {
+        max-width: 370px;
+        box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
+        background-color: $secondary-color;
+        @extend %padded-box;
+    }
+}
+
+%light-bg {
+    background: $light-bg-color;
+}
+.case-studies {
+    @extend %light-bg;
+}
+
+.testimonials-section {
+    @extend %light-bg;
+    .container {
+        border-top:  solid 1px #c5d5de;
+    }
+}
+
+.leader {
+    &__image {
+        display: block;
+        @include  rounded-box(320px, 320px);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
