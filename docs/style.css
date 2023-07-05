@@ -143,6 +143,7 @@ button {
   max-width: 345px;
   padding: 0 0 30px;
   box-shadow: 0 25px 34px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 .card__image {
   display: inline-block;
@@ -237,6 +238,23 @@ button {
   background-color: #ffcd77;
 }
 
+.product {
+  gap: 20px;
+  width: 540px;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.1);
+}
+.product__status {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 16px;
+  background-color: #c1f9d0;
+  border-radius: 4px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -310,4 +328,17 @@ body {
 
 .testimonials-section .container {
   border-top: solid 1px #c5d5de;
+}
+
+.leader__image {
+  display: block;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.leader__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
