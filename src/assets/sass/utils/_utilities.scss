@@ -73,11 +73,17 @@
     color: $accent-color;
 }
 
+%overflow-hide {
+    overflow: hidden;
+}
+.no-overflow {
+    @extend %overflow-hide
+}
 .text-truncate {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    @extend %overflow-hide;
 }
 
 @each $size, $margin in $margins{

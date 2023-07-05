@@ -72,10 +72,10 @@ body {
 }
 
 .leader {
+    width: 340px;
     &__image {
         display: block;
         @include  rounded-box(320px, 320px);
-        overflow: hidden;
 
         img {
             width: 100%;

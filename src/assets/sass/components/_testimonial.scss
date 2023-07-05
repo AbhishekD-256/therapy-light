@@ -4,7 +4,6 @@
     &__image {
         @include rounded-box(100px, 100px);
         margin-bottom: 20px;
-        overflow: hidden;
     }
     &__descri {
         max-width: 800px;
