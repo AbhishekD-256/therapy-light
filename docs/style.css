@@ -323,6 +323,10 @@ body, .form textarea, .form input, .btn {
   width: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #000000;
   font-size: 18px;
