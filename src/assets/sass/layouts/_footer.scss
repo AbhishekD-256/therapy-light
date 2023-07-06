@@ -1,0 +1,34 @@
+.footer  {
+    &-address {
+        max-width: 200px;
+    }
+
+    &-main {
+        border-bottom: solid 0.5px $primary-color;
+        justify-content: space-between;
+
+
+    }
+
+    &-bottom {
+        padding: 40px 0;
+    }
+    
+    &__nav {
+        gap: 16px;
+    }
+
+    &__link {
+        color: $primary-color;
+        font-weight: 500;
+    }
+
+    &__social-link {
+        line-height: 0;
+        
+        img {
+            width: 20px;
+        }
+    }
+    
+}

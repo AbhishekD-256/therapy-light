@@ -299,6 +299,30 @@ body, .form textarea, .form input, .btn {
   color: #ffffff;
 }
 
+.footer-address {
+  max-width: 200px;
+}
+.footer-main {
+  border-bottom: solid 0.5px #000000;
+  justify-content: space-between;
+}
+.footer-bottom {
+  padding: 40px 0;
+}
+.footer__nav {
+  gap: 16px;
+}
+.footer__link {
+  color: #000000;
+  font-weight: 500;
+}
+.footer__social-link {
+  line-height: 0;
+}
+.footer__social-link img {
+  width: 20px;
+}
+
 body {
   color: #000000;
   font-size: 18px;
